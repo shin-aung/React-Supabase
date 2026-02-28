@@ -1,64 +1,103 @@
-🚀 React + TypeScript + Vite + Supabase
+# 🚀 React + TypeScript + Vite + Supabase
 
-This project is built using:
+This project is built using modern web technologies:
 
-⚛️ React
+- ⚛️ React  
+- 🔷 TypeScript  
+- ⚡ Vite  
+- 🗄️ Supabase  
 
-🔷 TypeScript
+It provides a fast frontend development environment with backend services powered by Supabase.
 
-⚡ Vite
+---
 
-🗄️ Supabase
+## 📦 Installation
 
-It provides a modern frontend setup with backend services powered by Supabase.
+### 1️⃣ Clone the Repository
 
-📦 Installation
-
-Clone the repository:
-
+```bash
 git clone https://github.com/your-username/your-repo-name.git
 cd your-repo-name
+```
 
-Install required packages:
+### 2️⃣ Install Required Packages
 
+```bash
 npm install
-🔐 Environment Variables Setup
+```
+
+---
+
+## 🔐 Environment Variables Setup
 
 This project requires environment variables to connect to Supabase.
 
-Please request the .env file from the developer.
+Please request the `.env` file from the developer.
 
-Create a .env file in the root directory and add the required variables:
+Create a `.env` file in the root directory and add:
 
+```env
 VITE_SUPABASE_URL=your_supabase_url
 VITE_SUPABASE_ANON_KEY=your_anon_key
+```
 
-⚠️ Do NOT commit your .env file to GitHub.
+### ⚠️ Important
 
-Make sure .env is included in your .gitignore.
+- Do **NOT** commit your `.env` file to GitHub.
+- Make sure `.env` is included in your `.gitignore`.
 
-▶️ Running the Application
+Example `.gitignore` entry:
+
+```
+.env
+node_modules
+dist
+```
+
+---
+
+## ▶️ Running the Application
 
 Start the development server:
 
+```bash
 npm run dev
+```
 
-The app will typically run at:
+The application will usually run at:
 
+```
 http://localhost:5173
-🏗️ Build for Production
+```
 
-To create a production build:
+---
 
+## 🏗️ Build for Production
+
+Create a production build:
+
+```bash
 npm run build
+```
 
-To preview the production build:
+Preview the production build:
 
+```bash
 npm run preview
-📁 Tech Stack Overview
+```
 
-Frontend: React + TypeScript
+---
 
-Build Tool: Vite
+## 🛠️ Tech Stack
 
-Backend & Auth: Supabase
+- **Frontend:** React + TypeScript  
+- **Build Tool:** Vite  
+- **Backend & Authentication:** Supabase  
+
+---
+
+## 📄 Notes
+
+- Ensure Node.js (v16 or higher recommended) is installed.
+- Make sure environment variables are properly configured before running the application.
+- Do not expose your Supabase keys publicly.
